@@ -1,0 +1,171 @@
+body {
+  background-color: #DDAC81;
+}
+
+.ontable {
+  width: 40rem;
+  margin: 10rem auto 0 auto;
+  position: relative;
+}
+
+.main {
+  width: 20rem;
+  position: relative;
+}
+
+.plate {
+  background-color: #F4F4F4;
+  height: 20rem;
+  width: 20rem;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.round {
+  height: 18rem;
+  width: 18rem;
+  left: 0.8rem;
+  top: 0.8rem;
+  border: 4px solid #999999;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.cake {
+  position: absolute;
+  left: 1.5rem;
+  top: 1.5rem;
+  width: 0px;
+  height: 0px;
+  border-right: 8.5rem solid transparent;
+  border-top: 8.5rem solid #FF6B71;
+  border-left: 8.5rem solid #FF6B71;
+  border-bottom: 8.5rem solid #FF6B71;
+  border-top-left-radius: 8.5rem;
+  border-top-right-radius: 8.5rem;
+  border-bottom-left-radius: 8.5rem;
+  border-bottom-right-radius: 8.5rem;
+}
+
+.strawberry {
+  width: 0.7rem;
+  border-left: 2rem solid transparent;
+  border-right: 2rem solid transparent;
+  border-top: 4rem solid red;
+  border-radius: 42%;
+  position: relative;
+  left: 7rem;
+  top: 2.5rem;
+}
+.strawberry .dots {
+  height: 4px;
+  width: 2px;
+  border-radius: 50%;
+  background-color: #fff;
+  position: absolute;
+}
+.strawberry .dots.d1 {
+  top: -1rem;
+  left: 0.3rem;
+}
+.strawberry .dots.d2 {
+  top: -2rem;
+  left: -0.1rem;
+}
+.strawberry .dots.d3 {
+  top: -2rem;
+  left: 0.7rem;
+}
+.strawberry .dots.d4 {
+  top: -3rem;
+  left: -0.4rem;
+}
+.strawberry .dots.d5 {
+  top: -3rem;
+  left: 0.3rem;
+}
+.strawberry .dots.d6 {
+  top: -3rem;
+  left: 1rem;
+}
+.strawberry.s-2 {
+  transform: rotate(-45deg);
+  left: 3.5rem;
+  top: 0.2rem;
+}
+.strawberry.s-3 {
+  transform: rotate(-90deg);
+  left: 2rem;
+  top: 0rem;
+}
+.strawberry.s-4 {
+  transform: rotate(-135deg);
+  left: 3.5rem;
+  top: 0rem;
+}
+.strawberry.s-5 {
+  transform: rotate(-180deg);
+  left: 7.5rem;
+  top: -2.5rem;
+}
+.strawberry.s-6 {
+  transform: rotate(60deg);
+  left: 13rem;
+  top: 6rem;
+  animation-name: cake-s;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+.strawberry.s-7 {
+  transform: rotate(120deg);
+  left: 13rem;
+  top: 6rem;
+  animation-name: cake-s;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+.serving {
+  width: 10rem;
+  position: relative;
+  left: 16rem;
+  top: -19rem;
+}
+.serving .plate {
+  height: 15rem;
+  width: 15rem;
+  left: 7rem;
+  top: 2rem;
+}
+.serving .plate .round {
+  height: 12rem;
+  width: 12rem;
+  left: 1.3rem;
+  top: 1.3rem;
+}
+.serving .cake {
+  border-right: 8.5rem solid #FF6B71;
+  border-top: 8.5rem solid transparent;
+  border-left: 8.5rem solid transparent;
+  border-bottom: 8.5rem solid transparent;
+  border-top-left-radius: 8.5rem;
+  border-top-right-radius: 8.5rem;
+  border-bottom-left-radius: 8.5rem;
+  border-bottom-right-radius: 8.5rem;
+  animation-name: cake;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes cake {
+  50% {
+    left: -14.5rem;
+    top: 0.5rem;
+  }
+}
+@keyframes cake-s {
+  50% {
+    left: -3rem;
+    top: 5rem;
+  }
+}
